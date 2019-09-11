@@ -45,6 +45,15 @@ use Cake\Routing\Route\DashedRoute;
  */
 Router::defaultRouteClass(DashedRoute::class);
 
+// Ceci est la route à ajouter pour notre nouvelle action.
+// Le `*` à la fin permet de préciser à CakePHP que cette action
+// a des paramètres qui lui seront passés
+Router::scope('/commandes', ['controller' => 'Commandes'], function ($routes) {
+        $routes->connect('/tagged/*', ['action' => 'produits']);
+    }
+);
+
+
 Router::scope('/', function (RouteBuilder $routes) {
     // Register scoped middleware for in scopes.
     $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([

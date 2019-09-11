@@ -40,6 +40,7 @@ class CommandesTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $this->belongsToMany('Produits');
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
@@ -97,5 +98,70 @@ class CommandesTable extends Table
         $rules->add($rules->existsIn(['user_id'], 'Users'));
 
         return $rules;
+    }
+
+    public function findTagged(Query $query, array $options)
+    {
+        $columns = [
+            'Commandes.id', 'Commandes.user_id', 'Commandes.description',
+            'Commandes.price', 'Commandes.created',
+            'Commandes.slug',
+        ];
+
+        $query = $query
+            ->select($columns)
+            ->distinct($columns);
+
+        if (empty($options['produits'])) {
+            // si aucun produit n'est fourni, trouvons les articles qui n'ont pas de produit
+            $query->leftJoinWith('Produits')
+                ->where(['Produits.title IS' => null]);
+        } else {
+            // Trouvons les articles qui ont au moins un des produits fourni
+            $query->innerJoinWith('Produits')
+                ->where(['Produits.title IN' => $options['produits']]);
+        }
+
+        return $query->group(['Commandes.id']);
+    }
+
+    public function beforeSave($event, $entity, $options)
+    {
+        if ($entity->produit_string) {
+            $entity->produits = $this->_buildProduits($entity->produit_string);
+        }
+
+        // Le code déjà existant
+    }
+
+    protected function _buildProduits($produitString)
+    {
+        // Trim des Produits
+        $newProduits = array_map('trim', explode(',', $produitString));
+        // Retire les Produits vides
+        $newProduits = array_filter($newProduits);
+        // Dé-doublonne les produit
+        $newProduits = array_unique($newProduits);
+
+        $out = [];
+        $query = $this->Produits->find()
+            ->where(['Produits.title IN' => $newProduits]);
+
+        // Retire les produits existant de la liste des nouveaux produit.
+        foreach ($query->extract('title') as $existing) {
+            $index = array_search($existing, $newProduits);
+            if ($index !== false) {
+                unset($newProduits[$index]);
+            }
+        }
+        // Ajout des produits existant.
+        foreach ($query as $produit) {
+            $out[] = $produit;
+        }
+        // Ajout des nouveaux produits.
+        foreach ($newProduits as $produit) {
+            $out[] = $this->Produits->newEntity(['title' => $produit]);
+        }
+        return $out;
     }
 }

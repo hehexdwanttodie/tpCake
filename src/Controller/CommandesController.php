@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\Query;
 
 /**
  * Commandes Controller
@@ -12,6 +13,17 @@ use App\Controller\AppController;
  */
 class CommandesController extends AppController
 {
+
+    public function initialize()
+{
+    parent::initialize();
+
+
+    $this->Auth->allow('produits');
+
+
+}
+
     /**
      * Index method
      *
@@ -53,16 +65,17 @@ class CommandesController extends AppController
         $commande = $this->Commandes->newEntity();
         if ($this->request->is('post')) {
             $commande = $this->Commandes->patchEntity($commande, $this->request->getData());
-            if ($this->Commandes->save($commande)) {
-                $this->Flash->success(__('The commande has been saved.'));
 
+            // Changé : On force le user_id à celui de la session
+            $commande->user_id = $this->Auth->user('id');
+
+            if ($this->Commandes->save($commande)) {
+                $this->Flash->success(__('Votre commande a été sauvegardé.'));
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The commande could not be saved. Please, try again.'));
+            $this->Flash->error(__('Impossible d\'ajouter votre commande.'));
         }
-        $users = $this->Commandes->Users->find('list', ['limit' => 200]);
-        $produits = $this->Commandes->Produits->find('list', ['limit' => 200]);
-        $this->set(compact('commande', 'users', 'produits'));
+        $this->set('commande', $commande);
     }
 
     /**
@@ -72,23 +85,25 @@ class CommandesController extends AppController
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function edit($id = null)
+    public function edit($slug)
     {
-        $commande = $this->Commandes->get($id, [
-            'contain' => ['Produits']
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $commande = $this->Commandes->patchEntity($commande, $this->request->getData());
-            if ($this->Commandes->save($commande)) {
-                $this->Flash->success(__('The commande has been saved.'));
+        $commande = $this->Commandes
+            ->findBySlug($slug)
+            ->contain('Produits') // Charge les produits associés
+            ->firstOrFail();
 
+        if ($this->request->is(['post', 'put'])) {
+            $this->Commandes->patchEntity($commande, $this->request->getData(), [
+                // Ajouté : Empêche la modification du user_id.
+                'accessibleFields' => ['user_id' => false]
+            ]);
+            if ($this->Commandes->save($commande)) {
+                $this->Flash->success(__('Votre commande a été modifié.'));
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The commande could not be saved. Please, try again.'));
+            $this->Flash->error(__('Impossible de mettre à jour la commande.'));
         }
-        $users = $this->Commandes->Users->find('list', ['limit' => 200]);
-        $produits = $this->Commandes->Produits->find('list', ['limit' => 200]);
-        $this->set(compact('commande', 'users', 'produits'));
+        $this->set('commande', $commande);
     }
 
     /**
@@ -110,4 +125,39 @@ class CommandesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function isAuthorized($user)
+    {
+        $action = $this->request->getParam('action');
+        // Les actions 'add' et 'produits' sont toujours autorisés pour les utilisateur
+        // authentifiés sur l'application
+        if (in_array($action, ['add', 'produits'])) {
+            return true;
+        }
+
+        // Toutes les autres actions nécessitent un slug
+        $slug = $this->request->getParam('pass.0');
+        if (!$slug) {
+            return false;
+        }
+
+        // On vérifie que la commande appartient à l'utilisateur connecté
+        $commande = $this->Commandes->findBySlug($slug)->first();
+
+        return $commande->user_id === $user['id'];
+    }
+    public function produits(... $produits)
+    {
+        // Utilisation de CommandesTable pour trouver les commandes taggés
+        $commandes = $this->Commandes->find('tagged', [
+            'produits' => $produits
+        ]);
+
+        // Passage des variable dans le contexte de la view du template
+        $this->set([
+            'commandes' => $commandes,
+            'produits' => $produits
+        ]);
+    }
+
 }

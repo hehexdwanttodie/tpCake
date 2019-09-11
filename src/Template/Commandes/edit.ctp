@@ -29,7 +29,8 @@
             echo $this->Form->control('description');
             echo $this->Form->control('slug');
             echo $this->Form->control('price');
-            echo $this->Form->control('produits._ids', ['options' => $produits]);
+            echo $this->Form->control('tag_string', ['type' => 'text']);
+
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

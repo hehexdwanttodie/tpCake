@@ -10,7 +10,7 @@ use Cake\ORM\Entity;
  * @property int $user_id
  * @property string $description
  * @property string $slug
- * @property int|null $price
+ * @property string|null $price
  * @property \Cake\I18n\FrozenTime|null $created
  * @property \Cake\I18n\FrozenTime|null $modified
  *
@@ -31,7 +31,7 @@ class Commande extends Entity
     protected $_accessible = [
         'user_id' => true,
         'description' => true,
-        'slug' => true,
+        'slug' => false,
         'price' => true,
         'created' => true,
         'modified' => true,
