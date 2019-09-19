@@ -18,6 +18,7 @@
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('store_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -28,6 +29,7 @@
             <?php foreach ($produits as $produit): ?>
             <tr>
                 <td><?= $this->Number->format($produit->id) ?></td>
+                <td><?= $this->Number->format($produit->store_id) ?></td>
                 <td><?= h($produit->title) ?></td>
                 <td><?= h($produit->created) ?></td>
                 <td><?= h($produit->modified) ?></td>

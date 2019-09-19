@@ -24,8 +24,8 @@ class CommandesTableTest extends TestCase
      */
     public $fixtures = [
         'app.Commandes',
-        'app.Users',
-        'app.Produits'
+        'app.Produits',
+        'app.Users'
     ];
 
     /**
@@ -78,6 +78,26 @@ class CommandesTableTest extends TestCase
      * @return void
      */
     public function testBuildRules()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test findTagged method
+     *
+     * @return void
+     */
+    public function testFindTagged()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test beforeSave method
+     *
+     * @return void
+     */
+    public function testBeforeSave()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

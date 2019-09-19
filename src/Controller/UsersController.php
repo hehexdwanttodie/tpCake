@@ -103,6 +103,7 @@ class UsersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
     public function login()
     {
         if ($this->request->is('post')) {
@@ -118,7 +119,7 @@ class UsersController extends AppController
     public function initialize()
     {
         parent::initialize();
-        $this->Auth->allow(['logout', 'add']);
+        $this->Auth->allow(['logout','add']);
     }
 
     public function logout()
@@ -126,4 +127,6 @@ class UsersController extends AppController
         $this->Flash->success('Vous avez été déconnecté.');
         return $this->redirect($this->Auth->logout());
     }
+
+
 }

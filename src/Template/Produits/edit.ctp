@@ -23,6 +23,7 @@
     <fieldset>
         <legend><?= __('Edit Produit') ?></legend>
         <?php
+            echo $this->Form->control('store_id');
             echo $this->Form->control('title');
             echo $this->Form->control('commandes._ids', ['options' => $commandes]);
         ?>

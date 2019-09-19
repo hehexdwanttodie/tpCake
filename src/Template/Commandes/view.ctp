@@ -55,6 +55,7 @@
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th scope="col"><?= __('Id') ?></th>
+                <th scope="col"><?= __('Store Id') ?></th>
                 <th scope="col"><?= __('Title') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
@@ -63,6 +64,7 @@
             <?php foreach ($commande->produits as $produits): ?>
             <tr>
                 <td><?= h($produits->id) ?></td>
+                <td><?= h($produits->store_id) ?></td>
                 <td><?= h($produits->title) ?></td>
                 <td><?= h($produits->created) ?></td>
                 <td><?= h($produits->modified) ?></td>

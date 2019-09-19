@@ -50,8 +50,8 @@ class CommandesFixture extends TestFixture
                 'description' => 'Lorem ipsum dolor sit amet',
                 'slug' => 'Lorem ipsum dolor sit amet',
                 'price' => 1,
-                'created' => '2019-08-28 18:09:34',
-                'modified' => '2019-08-28 18:09:34'
+                'created' => '2019-09-19 12:34:15',
+                'modified' => '2019-09-19 12:34:15'
             ],
         ];
         parent::init();

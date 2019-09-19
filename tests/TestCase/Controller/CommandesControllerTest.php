@@ -21,8 +21,8 @@ class CommandesControllerTest extends TestCase
      */
     public $fixtures = [
         'app.Commandes',
-        'app.Users',
         'app.Produits',
+        'app.Users',
         'app.CommandesProduits'
     ];
 

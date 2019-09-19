@@ -27,6 +27,10 @@
             <td><?= $this->Number->format($produit->id) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Store Id') ?></th>
+            <td><?= $this->Number->format($produit->store_id) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($produit->created) ?></td>
         </tr>

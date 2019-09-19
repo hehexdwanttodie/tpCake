@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Produits Model
  *
+ * @property &\Cake\ORM\Association\BelongsTo $Stores
+ * @property &\Cake\ORM\Association\HasMany $Comments
  * @property \App\Model\Table\CommandesTable&\Cake\ORM\Association\BelongsToMany $Commandes
  *
  * @method \App\Model\Entity\Produit get($primaryKey, $options = [])
@@ -40,6 +42,13 @@ class ProduitsTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->belongsTo('Stores', [
+            'foreignKey' => 'store_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->hasMany('Comments', [
+            'foreignKey' => 'produit_id'
+        ]);
         $this->belongsToMany('Commandes', [
             'foreignKey' => 'produit_id',
             'targetForeignKey' => 'commande_id',
@@ -78,6 +87,7 @@ class ProduitsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['title']));
+        $rules->add($rules->existsIn(['store_id'], 'Stores'));
 
         return $rules;
     }

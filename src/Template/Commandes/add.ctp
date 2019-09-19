@@ -23,8 +23,7 @@
             echo $this->Form->control('description');
             echo $this->Form->control('slug');
             echo $this->Form->control('price');
-            echo $this->Form->control('produit_string', ['type' => 'text']);
-
+            echo $this->Form->control('produits._ids', ['options' => $produits]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

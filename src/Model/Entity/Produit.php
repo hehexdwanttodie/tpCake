@@ -7,6 +7,7 @@ use Cake\ORM\Entity;
  * Produit Entity
  *
  * @property int $id
+ * @property int $store_id
  * @property string|null $title
  * @property \Cake\I18n\FrozenTime|null $created
  * @property \Cake\I18n\FrozenTime|null $modified
@@ -25,6 +26,7 @@ class Produit extends Entity
      * @var array
      */
     protected $_accessible = [
+        'store_id' => true,
         'title' => true,
         'created' => true,
         'modified' => true,
