@@ -2,13 +2,16 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use App\Model\Entity\User;
+use Cake\Mailer\Email;
+use Cake\Utility\Text;
 
 /**
  * Users Controller
  *
  * @property \App\Model\Table\UsersTable $Users
  *
- * @method \App\Model\Entity\User[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
+ * @method User[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class UsersController extends AppController
 {
@@ -50,7 +53,9 @@ class UsersController extends AppController
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
+            $user->token = Text::uuid();
             if ($this->Users->save($user)) {
+                $this->sendConfirm($user->email,$user);
                 $this->Flash->success(__('The user has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
@@ -103,7 +108,6 @@ class UsersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-
     public function login()
     {
         if ($this->request->is('post')) {
@@ -115,18 +119,48 @@ class UsersController extends AppController
             $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
         }
     }
-
+    public function sendConfirm($email, User $user)
+    {
+        $email = new Email('default');
+        $email->to($user['email'])->subject('Confirmation de compte')->send('Click here to confirm email : ' .
+            $user->link = "http://" . $_SERVER['HTTP_HOST'] . $this->request->webroot .
+                "users/validate/" . $user->id.'.'.$user->token);
+    }
+    public function validate($id = null)
+    {
+        if($id != null){
+            $params = explode('.', $id);
+            $userId = $params[0];
+            $validKey = $params[1];
+            $user = $this->Users->get($userId);
+            if($user->token == $validKey){
+                $user->actif = true;
+                if ($this->Users->save($user)) {
+                    $this->Flash->success(__('The user has been saved.'));
+                   return;
+                }
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            }
+        }
+    }
     public function initialize()
     {
         parent::initialize();
         $this->Auth->allow(['logout','add']);
     }
-
     public function logout()
     {
         $this->Flash->success('Vous avez été déconnecté.');
         return $this->redirect($this->Auth->logout());
     }
-
+    public function isAuthorized($user)
+    {
+        $action = $this->request->getParam('action');
+        if ($user['isAdmin'] == 1){
+            return true;
+        }else if (in_array($action, ['add','view','index','login'])) {
+            return true;
+        }
+    }
 
 }

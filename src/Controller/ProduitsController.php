@@ -19,6 +19,9 @@ class ProduitsController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Stores']
+        ];
         $produits = $this->paginate($this->Produits);
 
         $this->set(compact('produits'));
@@ -34,7 +37,7 @@ class ProduitsController extends AppController
     public function view($id = null)
     {
         $produit = $this->Produits->get($id, [
-            'contain' => ['Commandes']
+            'contain' => ['Stores', 'Commandes', 'Comments']
         ]);
 
         $this->set('produit', $produit);
@@ -57,8 +60,9 @@ class ProduitsController extends AppController
             }
             $this->Flash->error(__('The produit could not be saved. Please, try again.'));
         }
+        $stores = $this->Produits->Stores->find('list', ['limit' => 200]);
         $commandes = $this->Produits->Commandes->find('list', ['limit' => 200]);
-        $this->set(compact('produit', 'commandes'));
+        $this->set(compact('produit', 'stores', 'commandes'));
     }
 
     /**
@@ -82,8 +86,9 @@ class ProduitsController extends AppController
             }
             $this->Flash->error(__('The produit could not be saved. Please, try again.'));
         }
+        $stores = $this->Produits->Stores->find('list', ['limit' => 200]);
         $commandes = $this->Produits->Commandes->find('list', ['limit' => 200]);
-        $this->set(compact('produit', 'commandes'));
+        $this->set(compact('produit', 'stores', 'commandes'));
     }
 
     /**
@@ -104,5 +109,15 @@ class ProduitsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function isAuthorized($user)
+    {
+        $action = $this->request->getParam('action');
+        if ($user['isAdmin'] == 1){
+            return true;
+        }else if (in_array($action, ['view','index',])) {
+            return true;
+        }
     }
 }

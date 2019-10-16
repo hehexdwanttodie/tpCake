@@ -9,13 +9,12 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property int $user_id
  * @property string $description
- * @property string $slug
  * @property int|null $price
  * @property \Cake\I18n\FrozenTime|null $created
  * @property \Cake\I18n\FrozenTime|null $modified
  *
- * @property \App\Model\Entity\Produit[] $produits
  * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\Produit[] $produits
  */
 class Commande extends Entity
 {
@@ -31,11 +30,10 @@ class Commande extends Entity
     protected $_accessible = [
         'user_id' => true,
         'description' => true,
-        'slug' => true,
         'price' => true,
         'created' => true,
         'modified' => true,
-        'produits' => true,
-        'user' => true
+        'user' => true,
+        'produits' => true
     ];
 }

@@ -16,6 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\I18n\I18n;
 
 /**
  * Application Controller
@@ -40,25 +41,18 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
-
+        I18n::setLocale($this->request->session()->read('Config.language'));
         $this->loadComponent('RequestHandler', [
             'enableBeforeRedirect' => false,
         ]);
         $this->loadComponent('Flash');
 
-        /*
-         * Enable the following component for recommended CakePHP security settings.
-         * see https://book.cakephp.org/3.0/en/controllers/components/security.html
-         */
-        //$this->loadComponent('Security');
-
         $this->loadComponent('Auth', [
-            // La ligne suivante a été ajoutée
             'authorize'=> 'Controller',
             'authenticate' => [
                 'Form' => [
                     'fields' => [
-                        'username' => 'email',
+                        'username' => 'username',
                         'password' => 'password'
                     ]
                 ]
@@ -73,12 +67,20 @@ class AppController extends Controller
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        $this->Auth->allow(['display', 'view', 'index']);
+        $this->Auth->allow(['display', 'view', 'index','changelang','/users/validate']);
     }
 
     public function isAuthorized($user)
     {
-        // Par défaut, on refuse l'accès.
-        return false;
+        if ($user['isAdmin'] == 1){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public function changeLang($lang = 'en_US') {
+        I18n::setLocale($lang);
+        $this->request->session()->write('Config.language', $lang);
+        return $this->redirect($this->request->referer());
     }
 }

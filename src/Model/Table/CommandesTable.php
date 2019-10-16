@@ -5,6 +5,7 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\ORM\Behavior\TranslateBehavior;
 
 /**
  * Commandes Model
@@ -50,6 +51,7 @@ class CommandesTable extends Table
             'targetForeignKey' => 'produit_id',
             'joinTable' => 'commandes_produits'
         ]);
+        $this->addBehavior('Translate', ['fields' => ['description']]);
     }
 
     /**
@@ -71,13 +73,6 @@ class CommandesTable extends Table
             ->notEmptyString('description');
 
         $validator
-            ->scalar('slug')
-            ->maxLength('slug', 191)
-            ->requirePresence('slug', 'create')
-            ->notEmptyString('slug')
-            ->add('slug', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
-
-        $validator
             ->integer('price')
             ->allowEmptyString('price');
 
@@ -93,7 +88,6 @@ class CommandesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['slug']));
         $rules->add($rules->existsIn(['user_id'], 'Users'));
 
         return $rules;

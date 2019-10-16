@@ -1,0 +1,557 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-10-09 17:21+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/CommandesController.php:57
+#: Controller/CommandesController.php:83
+msgid "The order has been saved."
+msgstr "커맨드가 저장되었습니다."
+
+#: Controller/CommandesController.php:61
+#: Controller/CommandesController.php:87
+msgid "The order could not be saved. Please, try again."
+msgstr "명령을 저장할 수 없습니다. 다시 시도하십시오."
+
+#: Controller/CommandesController.php:106
+msgid "The order has been deleted."
+msgstr "커맨드가 삭제되었습니다."
+
+#: Controller/CommandesController.php:108
+msgid "The order could not be deleted. Please, try again."
+msgstr "명령을 삭제할 수 없습니다. 다시 시도하십시오."
+
+#: Controller/CommentsController.php:57
+#: Controller/CommentsController.php:82
+msgid "The comment has been saved."
+msgstr "댓글이 저장되었습니다."
+
+#: Controller/CommentsController.php:61
+#: Controller/CommentsController.php:86
+msgid "The comment could not be saved. Please, try again."
+msgstr "댓글을 저장할 수 없습니다. 다시 시도하십시오."
+
+#: Controller/CommentsController.php:104
+msgid "The comment has been deleted."
+msgstr "댓글이 삭제되었습니다."
+
+#: Controller/CommentsController.php:106
+msgid "The comment could not be deleted. Please, try again."
+msgstr "댓글을 삭제할 수 없습니다. 다시 시도하십시오."
+
+#: Controller/ProduitsController.php:54
+#: Controller/ProduitsController.php:79
+msgid "The product has been saved."
+msgstr "생산품이 저장되었습니다."
+
+#: Controller/ProduitsController.php:58
+#: Controller/ProduitsController.php:83
+msgid "The product could not be saved. Please, try again."
+msgstr "도관을 저장할 수 없습니다. 다시 시도하십시오."
+
+#: Controller/ProduitsController.php:101
+msgid "The product has been deleted."
+msgstr "생산품이 삭제되었습니다."
+
+#: Controller/ProduitsController.php:103
+msgid "The product could not be deleted. Please, try again."
+msgstr "프로 듀트를 삭제할 수 없습니다. 다시 시도하십시오."
+
+#: Controller/StoresController.php:54
+#: Controller/StoresController.php:78
+msgid "The store has been saved."
+msgstr "상점이 저장되었습니다."
+
+#: Controller/StoresController.php:58
+#: Controller/StoresController.php:82
+msgid "The store could not be saved. Please, try again."
+msgstr "상점을 저장할 수 없습니다. 다시 시도하십시오."
+
+#: Controller/StoresController.php:99
+msgid "The store has been deleted."
+msgstr "상점이 삭제되었습니다."
+
+#: Controller/StoresController.php:101
+msgid "The store could not be deleted. Please, try again."
+msgstr "상점을 삭제할 수 없습니다. 다시 시도 해주세요"
+
+#: Controller/UsersController.php:54
+#: Controller/UsersController.php:78
+msgid "The user has been saved."
+msgstr "사용자가 저장되었습니다."
+
+#: Controller/UsersController.php:58
+#: Controller/UsersController.php:82
+msgid "The user could not be saved. Please, try again."
+msgstr "사용자를 저장할 수 없습니다. 다시 시도하십시오."
+
+#: Controller/UsersController.php:99
+msgid "The user has been deleted."
+msgstr "사용자가 삭제되었습니다."
+
+#: Controller/UsersController.php:101
+msgid "The user could not be deleted. Please, try again."
+msgstr "사용자를 삭제할 수 없습니다. 다시 시도하십시오."
+
+#: Template/Commandes/add.ctp:9
+#: Template/Commandes/edit.ctp:9
+#: Template/Commandes/index.ctp:9
+#: Template/Commandes/index.ctp:28
+#: Template/Commandes/view.ctp:9
+#: Template/Commandes/view.ctp:58
+#: Template/Comments/add.ctp:9
+#: Template/Comments/edit.ctp:9
+#: Template/Comments/index.ctp:9
+#: Template/Comments/index.ctp:24
+#: Template/Comments/view.ctp:9
+#: Template/Produits/add.ctp:9
+#: Template/Produits/edit.ctp:9
+#: Template/Produits/index.ctp:9
+#: Template/Produits/index.ctp:25
+#: Template/Produits/view.ctp:9
+#: Template/Produits/view.ctp:54
+#: Template/Stores/add.ctp:9
+#: Template/Stores/edit.ctp:9
+#: Template/Stores/index.ctp:9
+#: Template/Stores/index.ctp:24
+#: Template/Stores/view.ctp:9
+#: Template/Stores/view.ctp:48
+#: Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9
+#: Template/Users/index.ctp:26
+#: Template/Users/view.ctp:9
+#: Template/Users/view.ctp:58
+msgid "Actions"
+msgstr "행위"
+
+#: Template/Commandes/add.ctp:10
+#: Template/Commandes/edit.ctp:16
+#: Template/Commandes/view.ctp:12
+#: Template/Produits/add.ctp:11
+#: Template/Produits/edit.ctp:17
+#: Template/Produits/index.ctp:11
+#: Template/Produits/view.ctp:14
+#: Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "List Orders"
+msgstr "명령 목록"
+
+#: Template/Commandes/add.ctp:11
+#: Template/Commandes/edit.ctp:17
+#: Template/Commandes/index.ctp:11
+#: Template/Commandes/view.ctp:14
+#: Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:16
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "사용자 목록"
+
+#: Template/Commandes/add.ctp:12
+#: Template/Commandes/edit.ctp:18
+#: Template/Commandes/index.ctp:12
+#: Template/Commandes/view.ctp:15
+#: Template/Users/index.ctp:10
+#: Template/Users/view.ctp:13
+msgid "New User"
+msgstr "새로운 사용자"
+
+#: Template/Commandes/add.ctp:13
+#: Template/Commandes/edit.ctp:19
+#: Template/Commandes/index.ctp:13
+#: Template/Commandes/view.ctp:16
+#: Template/Comments/add.ctp:11
+#: Template/Comments/edit.ctp:17
+#: Template/Comments/index.ctp:11
+#: Template/Comments/view.ctp:14
+#: Template/Produits/add.ctp:10
+#: Template/Produits/edit.ctp:16
+#: Template/Produits/view.ctp:12
+#: Template/Stores/add.ctp:11
+#: Template/Stores/edit.ctp:17
+#: Template/Stores/index.ctp:11
+#: Template/Stores/view.ctp:14
+msgid "List Products"
+msgstr "생산품 목록"
+
+#: Template/Commandes/add.ctp:14
+#: Template/Commandes/edit.ctp:20
+#: Template/Commandes/index.ctp:14
+#: Template/Commandes/view.ctp:17
+#: Template/Comments/add.ctp:12
+#: Template/Comments/edit.ctp:18
+#: Template/Comments/index.ctp:12
+#: Template/Comments/view.ctp:15
+#: Template/Produits/index.ctp:10
+#: Template/Produits/view.ctp:13
+#: Template/Stores/add.ctp:12
+#: Template/Stores/edit.ctp:18
+#: Template/Stores/index.ctp:12
+#: Template/Stores/view.ctp:15
+msgid "New Product"
+msgstr "새로운 도관"
+
+#: Template/Commandes/add.ctp:20
+msgid "Add Orders"
+msgstr "커맨드 추가"
+
+#: Template/Commandes/add.ctp:28
+#: Template/Commandes/edit.ctp:34
+#: Template/Comments/add.ctp:25
+#: Template/Comments/edit.ctp:31
+#: Template/Produits/add.ctp:25
+#: Template/Produits/edit.ctp:31
+#: Template/Stores/add.ctp:23
+#: Template/Stores/edit.ctp:29
+#: Template/Users/add.ctp:25
+#: Template/Users/edit.ctp:31
+msgid "Submit"
+msgstr "제출"
+
+#: Template/Commandes/edit.ctp:11
+#: Template/Commandes/index.ctp:43
+#: Template/Commandes/view.ctp:70
+#: Template/Comments/edit.ctp:11
+#: Template/Comments/index.ctp:37
+#: Template/Produits/edit.ctp:11
+#: Template/Produits/index.ctp:39
+#: Template/Produits/view.ctp:68
+#: Template/Stores/edit.ctp:11
+#: Template/Stores/index.ctp:37
+#: Template/Stores/view.ctp:60
+#: Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:41
+#: Template/Users/view.ctp:72
+msgid "Delete"
+msgstr "지우다"
+
+#: Template/Commandes/edit.ctp:13
+#: Template/Commandes/index.ctp:43
+#: Template/Commandes/view.ctp:11
+#: Template/Commandes/view.ctp:70
+#: Template/Comments/edit.ctp:13
+#: Template/Comments/index.ctp:37
+#: Template/Comments/view.ctp:11
+#: Template/Produits/edit.ctp:13
+#: Template/Produits/index.ctp:39
+#: Template/Produits/view.ctp:11
+#: Template/Produits/view.ctp:68
+#: Template/Stores/edit.ctp:13
+#: Template/Stores/index.ctp:37
+#: Template/Stores/view.ctp:11
+#: Template/Stores/view.ctp:60
+#: Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:41
+#: Template/Users/view.ctp:11
+#: Template/Users/view.ctp:72
+msgid "Are you sure you want to delete # {0}?"
+msgstr "# {0}을 (를) 삭제 하시겠습니까?"
+
+#: Template/Commandes/edit.ctp:26
+#: Template/Commandes/view.ctp:10
+msgid "Edit Order"
+msgstr "커맨드 편집"
+
+#: Template/Commandes/index.ctp:10
+#: Template/Commandes/view.ctp:13
+#: Template/Produits/add.ctp:12
+#: Template/Produits/edit.ctp:18
+#: Template/Produits/index.ctp:12
+#: Template/Produits/view.ctp:15
+#: Template/Users/add.ctp:12
+#: Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "New Order"
+msgstr "새로운 사령관"
+
+#: Template/Commandes/index.ctp:18
+msgid "Orders"
+msgstr "명령"
+
+#: Template/Commandes/index.ctp:41
+#: Template/Commandes/view.ctp:68
+#: Template/Comments/index.ctp:35
+#: Template/Produits/index.ctp:37
+#: Template/Produits/view.ctp:66
+#: Template/Stores/index.ctp:35
+#: Template/Stores/view.ctp:58
+#: Template/Users/index.ctp:39
+#: Template/Users/view.ctp:70
+msgid "View"
+msgstr "전망"
+
+#: Template/Commandes/index.ctp:42
+#: Template/Commandes/view.ctp:69
+#: Template/Comments/index.ctp:36
+#: Template/Produits/index.ctp:38
+#: Template/Produits/view.ctp:67
+#: Template/Stores/index.ctp:36
+#: Template/Stores/view.ctp:59
+#: Template/Users/index.ctp:40
+#: Template/Users/view.ctp:71
+msgid "Edit"
+msgstr "편집하다"
+
+#: Template/Commandes/index.ctp:51
+#: Template/Comments/index.ctp:45
+#: Template/Produits/index.ctp:47
+#: Template/Stores/index.ctp:45
+#: Template/Users/index.ctp:49
+msgid "first"
+msgstr "먼저"
+
+#: Template/Commandes/index.ctp:52
+#: Template/Comments/index.ctp:46
+#: Template/Produits/index.ctp:48
+#: Template/Stores/index.ctp:46
+#: Template/Users/index.ctp:50
+msgid "previous"
+msgstr "이전"
+
+#: Template/Commandes/index.ctp:54
+#: Template/Comments/index.ctp:48
+#: Template/Produits/index.ctp:50
+#: Template/Stores/index.ctp:48
+#: Template/Users/index.ctp:52
+msgid "next"
+msgstr "다음"
+
+#: Template/Commandes/index.ctp:55
+#: Template/Comments/index.ctp:49
+#: Template/Produits/index.ctp:51
+#: Template/Stores/index.ctp:49
+#: Template/Users/index.ctp:53
+msgid "last"
+msgstr "마지막"
+
+#: Template/Commandes/index.ctp:57
+#: Template/Comments/index.ctp:51
+#: Template/Produits/index.ctp:53
+#: Template/Stores/index.ctp:51
+#: Template/Users/index.ctp:55
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "{{count}} 중 {{count}} 개 중 {{current}} 개 레코드를 표시하는 {{pages}} 페이지 {{page}}"
+
+#: Template/Commandes/view.ctp:11
+msgid "Delete Order"
+msgstr "커맨드 삭제"
+
+#: Template/Commandes/view.ctp:24
+msgid "User"
+msgstr "사용자"
+
+#: Template/Commandes/view.ctp:28
+#: Template/Produits/view.ctp:49
+#: Template/Users/view.ctp:53
+msgid "Description"
+msgstr "기술"
+
+#: Template/Commandes/view.ctp:32
+#: Template/Commandes/view.ctp:53
+#: Template/Comments/view.ctp:26
+#: Template/Produits/view.ctp:26
+#: Template/Produits/view.ctp:47
+#: Template/Stores/view.ctp:26
+#: Template/Stores/view.ctp:43
+#: Template/Users/view.ctp:34
+#: Template/Users/view.ctp:51
+msgid "Id"
+msgstr "신분증"
+
+#: Template/Commandes/view.ctp:36
+#: Template/Produits/view.ctp:51
+#: Template/Users/view.ctp:55
+msgid "Price"
+msgstr "가격"
+
+#: Template/Commandes/view.ctp:40
+#: Template/Commandes/view.ctp:56
+#: Template/Produits/view.ctp:34
+#: Template/Produits/view.ctp:52
+#: Template/Stores/view.ctp:30
+#: Template/Stores/view.ctp:46
+#: Template/Users/view.ctp:38
+#: Template/Users/view.ctp:56
+msgid "Created"
+msgstr "만들어진"
+
+#: Template/Commandes/view.ctp:44
+#: Template/Commandes/view.ctp:57
+#: Template/Produits/view.ctp:38
+#: Template/Produits/view.ctp:53
+#: Template/Stores/view.ctp:34
+#: Template/Stores/view.ctp:47
+#: Template/Users/view.ctp:42
+#: Template/Users/view.ctp:57
+msgid "Modified"
+msgstr "수정"
+
+#: Template/Commandes/view.ctp:49
+#: Template/Stores/view.ctp:39
+msgid "Related Products"
+msgstr "관련 제품"
+
+#: Template/Commandes/view.ctp:54
+#: Template/Produits/view.ctp:30
+#: Template/Stores/view.ctp:44
+msgid "Store Id"
+msgstr "매장"
+
+#: Template/Commandes/view.ctp:55
+#: Template/Produits/view.ctp:22
+#: Template/Stores/view.ctp:45
+msgid "Title"
+msgstr "표제"
+
+#: Template/Comments/add.ctp:10
+#: Template/Comments/edit.ctp:16
+#: Template/Comments/view.ctp:12
+msgid "List Comments"
+msgstr "뒤 생산품"
+
+#: Template/Comments/add.ctp:18
+msgid "Add Comment"
+msgstr "댓글 목록"
+
+#: Template/Comments/edit.ctp:24
+#: Template/Comments/view.ctp:10
+msgid "Edit Comment"
+msgstr "코멘트 추가"
+
+#: Template/Comments/index.ctp:10
+#: Template/Comments/view.ctp:13
+msgid "New Comment"
+msgstr "댓글 수정"
+
+#: Template/Comments/index.ctp:16
+msgid "Comments"
+msgstr "새로운 코멘트"
+
+#: Template/Comments/view.ctp:11
+msgid "Delete Comment"
+msgstr "코멘트"
+
+#: Template/Comments/view.ctp:22
+msgid "Product"
+msgstr "댓글 삭제"
+
+#: Template/Comments/view.ctp:30
+#: Template/Stores/view.ctp:22
+msgid "Name"
+msgstr "프로 듀트"
+
+#: Template/Comments/view.ctp:34
+msgid "Comment"
+msgstr "이름"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "Erreur"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "논평"
+
+#: Template/Produits/add.ctp:18
+msgid "Add Product"
+msgstr "오류"
+
+#: Template/Produits/edit.ctp:24
+#: Template/Produits/view.ctp:10
+msgid "Edit Product"
+msgstr "뒤 생산품"
+
+#: Template/Produits/index.ctp:16
+msgid "Products"
+msgstr "생산물 추가"
+
+#: Template/Produits/view.ctp:11
+msgid "Delete Product"
+msgstr "생산품 편집"
+
+#: Template/Produits/view.ctp:43
+#: Template/Users/view.ctp:47
+msgid "Related Orders"
+msgstr "생산품"
+
+#: Template/Produits/view.ctp:48
+#: Template/Users/view.ctp:52
+msgid "User Id"
+msgstr "생산품 삭제"
+
+#: Template/Produits/view.ctp:50
+#: Template/Users/view.ctp:54
+msgid "Slug"
+msgstr "관련 명령"
+
+#: Template/Stores/add.ctp:10
+#: Template/Stores/edit.ctp:16
+#: Template/Stores/view.ctp:12
+msgid "List Stores"
+msgstr "사용자 ID"
+
+#: Template/Stores/add.ctp:18
+msgid "Add Store"
+msgstr "강타"
+
+#: Template/Stores/edit.ctp:24
+#: Template/Stores/view.ctp:10
+msgid "Edit Store"
+msgstr "상점 목록"
+
+#: Template/Stores/index.ctp:10
+#: Template/Stores/view.ctp:13
+msgid "New Store"
+msgstr "매장 추가"
+
+#: Template/Stores/index.ctp:16
+msgid "Stores"
+msgstr "상점 편집"
+
+#: Template/Stores/view.ctp:11
+msgid "Delete Store"
+msgstr "상점 삭제"
+
+#: Template/Users/add.ctp:18
+msgid "Add User"
+msgstr "사용자 추가"
+
+#: Template/Users/edit.ctp:24
+#: Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "사용자 편집"
+
+#: Template/Users/index.ctp:16
+msgid "Users"
+msgstr "사용자 사용자"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "사용자 삭제"
+
+#: Template/Users/view.ctp:22
+msgid "Username"
+msgstr "사용자"
+
+#: Template/Users/view.ctp:26
+msgid "Email"
+msgstr "사용자 이름"
+
+#: Template/Users/view.ctp:30
+msgid "Password"
+msgstr "이메일"
+

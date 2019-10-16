@@ -7,11 +7,11 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Commande'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Order'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Produits'), ['controller' => 'Produits', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Produit'), ['controller' => 'Produits', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Products'), ['controller' => 'Produits', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Product'), ['controller' => 'Produits', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="commandes index large-9 medium-8 columns content">
@@ -19,11 +19,9 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('description') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('slug') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('price') ?></th>
+                <!--<th scope="col"><?/*= $this->Paginator->sort('price') */?></th>-->
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -32,11 +30,9 @@
         <tbody>
             <?php foreach ($commandes as $commande): ?>
             <tr>
-                <td><?= $this->Number->format($commande->id) ?></td>
-                <td><?= $commande->has('user') ? $this->Html->link($commande->user->id, ['controller' => 'Users', 'action' => 'view', $commande->user->id]) : '' ?></td>
+                <td><?= $commande->has('user') ? $this->Html->link($commande->user->username, ['controller' => 'Users', 'action' => 'view', $commande->user->id]) : '' ?></td>
                 <td><?= h($commande->description) ?></td>
-                <td><?= h($commande->slug) ?></td>
-                <td><?= $this->Number->format($commande->price) ?></td>
+               <!-- <td><?/*= $this->Number->format($commande->price) */?> $</td>-->
                 <td><?= h($commande->created) ?></td>
                 <td><?= h($commande->modified) ?></td>
                 <td class="actions">

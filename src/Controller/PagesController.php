@@ -66,4 +66,12 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
+
+    public function isAuthorized($user)
+    {
+        $action = $this->request->getParam('action');
+        if (in_array($action, ['add','delete','edit','view','index'])) {
+            return true;
+        }
+    }
 }
