@@ -218,6 +218,13 @@ return [
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+        'gmail' => [
+            'host' => 'ssl://smtp.gmail.com',
+            'port' => 465,
+            'username' =>'lalonde.philippe2@gmail.com',
+            'password' => 'lwfovhflqjzkroxk',
+            'className' => 'Smtp'
+        ],
     ],
 
     /**
@@ -231,8 +238,8 @@ return [
      */
     'Email' => [
         'default' => [
-            'transport' => 'default',
-            'from' => 'you@localhost',
+            'transport' => 'gmail',
+            'from' => 'imsmurfing9@gmail.com',
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],
@@ -254,7 +261,8 @@ return [
     'Datasources' => [
         'default' => [
             'className' => Connection::class,
-            'driver' => Mysql::class,
+            /*'driver' => Mysql::class,*/
+            'driver' => \Cake\Database\Driver\Sqlite::class,
             'persistent' => false,
             'host' => 'localhost',
             /*
@@ -265,9 +273,10 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => 'mysql',
-            'database' => 'etrading',
+            /*'database' => 'etrading',*/
+            'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
             /*
-             * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
+             * You do not need to set this flag to use full utf-8 encoding1 (internal default since CakePHP 3.6).
              */
             //'encoding' => 'utf8mb4',
             'timezone' => 'UTC',

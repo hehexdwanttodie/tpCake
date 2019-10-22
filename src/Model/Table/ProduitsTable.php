@@ -9,8 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Produits Model
  *
- * @property &\Cake\ORM\Association\BelongsTo $Stores
- * @property &\Cake\ORM\Association\HasMany $Comments
+ * @property \App\Model\Table\StoresTable&\Cake\ORM\Association\BelongsTo $Stores
+ * @property \App\Model\Table\CommentsTable&\Cake\ORM\Association\HasMany $Comments
  * @property \App\Model\Table\CommandesTable&\Cake\ORM\Association\BelongsToMany $Commandes
  *
  * @method \App\Model\Entity\Produit get($primaryKey, $options = [])

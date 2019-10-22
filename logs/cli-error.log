@@ -1,0 +1,477 @@
+2019-09-11 16:46:09 Error: [PDOException] SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', 'mysql', Array)
+#1 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(106): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(391): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1095): Cake\Database\Connection->getSchemaCollection()
+#8 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1049): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\UsersTable))
+#11 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\UsersTable), 'users', 'Users')
+#12 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#15 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#16 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('users')
+#17 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 C:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2019-09-11 16:46:51 Error: [PDOException] SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', 'mysql', Array)
+#1 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(106): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(391): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1095): Cake\Database\Connection->getSchemaCollection()
+#8 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1049): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\CommandesTable))
+#11 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\CommandesTable), 'commandes', 'Commandes')
+#12 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Commandes')
+#13 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Commandes')
+#14 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Commandes', 0)
+#15 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#16 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('commandes')
+#17 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 C:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2019-09-11 16:47:01 Error: [PDOException] SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', 'mysql', Array)
+#1 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(106): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(391): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1095): Cake\Database\Connection->getSchemaCollection()
+#8 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1049): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\ProduitsTable))
+#11 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\ProduitsTable), 'produits', 'Produits')
+#12 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Produits')
+#13 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Produits')
+#14 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Produits', 0)
+#15 C:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#16 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('produits')
+#17 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#18 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 C:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2019-10-14 02:50:55 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'etrading.comment' doesn't exist in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 133
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(99): Cake\Database\Schema\Collection->_reflect('Column', 'comment', Array, Object(Cake\Database\Schema\TableSchema))
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('comment', Array)
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('comment')
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'comment', 'Comment')
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Comment')
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Comment')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Comment', 0)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('comment')
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'etrading.comment' doesn't exist in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(131): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(99): Cake\Database\Schema\Collection->_reflect('Column', 'comment', Array, Object(Cake\Database\Schema\TableSchema))
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('comment', Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('comment')
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'comment', 'Comment')
+#15 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Comment')
+#16 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Comment')
+#17 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Comment', 0)
+#18 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#19 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('comment')
+#20 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#21 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#22 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#23 {main}
+
+
+2019-10-16 01:19:42 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: commandes in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 107
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): PDO->prepare('SELECT * FROM c...')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\Database\Query))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Connection->prepare(Object(Cake\Database\Query))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Commandes')
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Commandes')
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Commandes')
+#15 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#17 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2019-10-16 01:19:51 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: comments in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 107
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): PDO->prepare('SELECT * FROM c...')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\Database\Query))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Connection->prepare(Object(Cake\Database\Query))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Comments')
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Comments')
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Comments')
+#15 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#17 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2019-10-16 01:20:06 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: files in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 107
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): PDO->prepare('SELECT * FROM f...')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\Database\Query))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Connection->prepare(Object(Cake\Database\Query))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Files')
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Files')
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Files')
+#15 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#17 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2019-10-16 01:20:16 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: i18ns in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 107
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): PDO->prepare('SELECT * FROM i...')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\Database\Query))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Connection->prepare(Object(Cake\Database\Query))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#15 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#17 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2019-10-16 01:20:22 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: produits in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 107
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): PDO->prepare('SELECT * FROM p...')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\Database\Query))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Connection->prepare(Object(Cake\Database\Query))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Produits')
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Produits')
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Produits')
+#15 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#17 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2019-10-16 01:20:27 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: stores in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 107
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): PDO->prepare('SELECT * FROM s...')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\Database\Query))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Connection->prepare(Object(Cake\Database\Query))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Stores')
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Stores')
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Stores')
+#15 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#17 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2019-10-16 01:20:33 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: users in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 107
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): PDO->prepare('SELECT * FROM u...')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\Database\Query))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Connection->prepare(Object(Cake\Database\Query))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Users')
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Users')
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Users')
+#15 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#17 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2019-10-16 01:21:32 Error: [InvalidArgumentException] The seed class "commandesSeed" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'commandesSeed')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-10-16 01:21:44 Error: [InvalidArgumentException] The seed class "comments" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'comments')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-10-16 01:21:50 Error: [InvalidArgumentException] The seed class "commentsSeed" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'commentsSeed')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-10-16 01:22:01 Error: [InvalidArgumentException] The seed class "filesSeed" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'filesSeed')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-10-16 01:22:08 Error: [InvalidArgumentException] The seed class "i18nSeed" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'i18nSeed')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-10-16 01:22:15 Error: [InvalidArgumentException] The seed class "produitsSeed" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'produitsSeed')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-10-16 01:22:22 Error: [InvalidArgumentException] The seed class "storesSeed" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'storesSeed')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-10-16 01:22:27 Error: [InvalidArgumentException] The seed class "usersSeed" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'usersSeed')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-10-16 01:37:08 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'etrading.i18ns' doesn't exist in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#14 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2019-10-16 01:38:52 Error: [InvalidArgumentException] The seed class "commandesSeed" does not exist in H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'commandesSeed')
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 H:\UniServerZ\www\tpCake\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 H:\UniServerZ\www\tpCake\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+

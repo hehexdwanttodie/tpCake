@@ -8,8 +8,8 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Commandes'), ['controller' => 'Commandes', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Commande'), ['controller' => 'Commandes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Orders'), ['controller' => 'Commandes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Order'), ['controller' => 'Commandes', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="users index large-9 medium-8 columns content">
@@ -17,10 +17,13 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+<!--                <th scope="col"><?/*= $this->Paginator->sort('id') */?></th>-->
                 <th scope="col"><?= $this->Paginator->sort('username') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('email') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('password') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('isAdmin') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('token') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('actif') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -29,10 +32,13 @@
         <tbody>
             <?php foreach ($users as $user): ?>
             <tr>
-                <td><?= $this->Number->format($user->id) ?></td>
+<!--                <td><?/*= $this->Number->format($user->id) */?></td>-->
                 <td><?= h($user->username) ?></td>
                 <td><?= h($user->email) ?></td>
                 <td><?= h($user->password) ?></td>
+                <td><?= h($user->isAdmin) ?></td>
+                <td><?= h($user->token) ?></td>
+                <td><?= h($user->actif) ?></td>
                 <td><?= h($user->created) ?></td>
                 <td><?= h($user->modified) ?></td>
                 <td class="actions">

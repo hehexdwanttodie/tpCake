@@ -7,9 +7,13 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Produit'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Commandes'), ['controller' => 'Commandes', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Commande'), ['controller' => 'Commandes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Product'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Stores'), ['controller' => 'Stores', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Store'), ['controller' => 'Stores', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Comments'), ['controller' => 'Comments', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Comment'), ['controller' => 'Comments', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Orders'), ['controller' => 'Commandes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Order'), ['controller' => 'Commandes', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="produits index large-9 medium-8 columns content">
@@ -17,7 +21,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('store_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -28,8 +31,7 @@
         <tbody>
             <?php foreach ($produits as $produit): ?>
             <tr>
-                <td><?= $this->Number->format($produit->id) ?></td>
-                <td><?= $this->Number->format($produit->store_id) ?></td>
+                <td><?= $produit->has('store') ? $this->Html->link($produit->store->name, ['controller' => 'Stores', 'action' => 'view', $produit->store->id]) : '' ?></td>
                 <td><?= h($produit->title) ?></td>
                 <td><?= h($produit->created) ?></td>
                 <td><?= h($produit->modified) ?></td>

@@ -74,6 +74,20 @@ class UsersTable extends Table
             ->requirePresence('password', 'create')
             ->notEmptyString('password');
 
+        $validator
+            ->boolean('isAdmin')
+            ->requirePresence('isAdmin', 'create')
+            ->notEmptyString('isAdmin');
+
+        $validator
+            ->scalar('token')
+            ->maxLength('token', 255)
+            ->allowEmptyString('token');
+
+        $validator
+            ->boolean('actif')
+            ->allowEmptyString('actif');
+
         return $validator;
     }
 

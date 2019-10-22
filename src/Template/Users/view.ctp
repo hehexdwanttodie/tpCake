@@ -11,8 +11,8 @@
         <li><?= $this->Form->postLink(__('Delete User'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Commandes'), ['controller' => 'Commandes', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Commande'), ['controller' => 'Commandes', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Orders'), ['controller' => 'Commandes', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Order'), ['controller' => 'Commandes', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="users view large-9 medium-8 columns content">
@@ -31,9 +31,13 @@
             <td><?= h($user->password) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($user->id) ?></td>
+            <th scope="row"><?= __('Token') ?></th>
+            <td><?= h($user->token) ?></td>
         </tr>
+<!--        <tr>
+            <th scope="row"><?/*= __('Id') */?></th>
+            <td><?/*= $this->Number->format($user->id) */?></td>
+        </tr>-->
         <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($user->created) ?></td>
@@ -42,28 +46,34 @@
             <th scope="row"><?= __('Modified') ?></th>
             <td><?= h($user->modified) ?></td>
         </tr>
+        <tr>
+            <th scope="row"><?= __('IsAdmin') ?></th>
+            <td><?= $user->isAdmin ? __('Yes') : __('No'); ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Actif') ?></th>
+            <td><?= $user->actif ? __('Yes') : __('No'); ?></td>
+        </tr>
     </table>
     <div class="related">
         <h4><?= __('Related Commandes') ?></h4>
         <?php if (!empty($user->commandes)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('User Id') ?></th>
+<!--                <th scope="col"><?/*= __('Id') */?></th>
+                <th scope="col"><?/*= __('User Id') */?></th>-->
                 <th scope="col"><?= __('Description') ?></th>
-                <th scope="col"><?= __('Slug') ?></th>
-                <th scope="col"><?= __('Price') ?></th>
+<!--                <th scope="col"><?/*= __('Price') */?></th>-->
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($user->commandes as $commandes): ?>
             <tr>
-                <td><?= h($commandes->id) ?></td>
-                <td><?= h($commandes->user_id) ?></td>
+<!--                <td><?/*= h($commandes->id) */?></td>
+                <td><?/*= h($commandes->user_id) */?></td>-->
                 <td><?= h($commandes->description) ?></td>
-                <td><?= h($commandes->slug) ?></td>
-                <td><?= h($commandes->price) ?></td>
+<!--                <td><?/*= h($commandes->price) */?></td>-->
                 <td><?= h($commandes->created) ?></td>
                 <td><?= h($commandes->modified) ?></td>
                 <td class="actions">

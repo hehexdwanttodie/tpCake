@@ -20,6 +20,9 @@
             echo $this->Form->control('username');
             echo $this->Form->control('email');
             echo $this->Form->control('password');
+            echo $this->Form->control('isAdmin');
+/*            echo $this->Form->control('token');
+            echo $this->Form->control('actif');*/
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -1,0 +1,142 @@
+The commande has been saved.
+The commande could not be saved. Please, try again.
+The commande has been deleted.
+The commande could not be deleted. Please, try again.
+The comment has been saved.
+The comment could not be saved. Please, try again.
+The comment has been deleted.
+The comment could not be deleted. Please, try again.
+The produit has been saved.
+The produit could not be saved. Please, try again.
+The produit has been deleted.
+The produit could not be deleted. Please, try again.
+The store has been saved.
+The store could not be saved. Please, try again.
+The store has been deleted.
+The store could not be deleted. Please, try again
+The user has been saved.
+The user could not be saved. Please, try again.
+The user has been deleted.
+The user could not be deleted. Please, try again.
+
+Actions
+
+List Commandes
+
+List Users
+
+New User
+
+List Produits
+
+New Produit
+
+Add Commande
+
+Submit
+
+Delete
+
+Are you sure you want to delete # {0}?
+
+Edit Commande
+
+New Commande
+
+Commandes
+
+View
+
+Edit
+
+first
+
+previous
+
+next
+
+last
+
+Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total
+
+Delete Commande
+
+User
+
+Description
+
+Id
+
+Price
+
+Created
+
+Modified
+
+Related Produits
+
+Store Id
+
+Title
+
+List Comments
+
+Add Comment
+
+Edit Comment
+
+New Comment
+
+Comments
+
+Delete Comment
+
+Produit
+
+Name
+
+Comment
+
+Error
+
+Back
+
+Add Produit
+
+Edit Produit
+
+Produits
+
+Delete Produit
+
+Related Commandes
+
+User Id
+
+Slug
+
+List Stores
+
+Add Store
+
+Edit Store
+
+New Store
+
+Stores
+
+Delete Store
+
+Add User
+
+Edit User
+
+Users
+
+Delete User
+
+Username
+
+Email
+
+Password

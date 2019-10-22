@@ -12,6 +12,8 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime|null $created
  * @property \Cake\I18n\FrozenTime|null $modified
  *
+ * @property \App\Model\Entity\Store $store
+ * @property \App\Model\Entity\Comment[] $comments
  * @property \App\Model\Entity\Commande[] $commandes
  */
 class Produit extends Entity
@@ -30,6 +32,8 @@ class Produit extends Entity
         'title' => true,
         'created' => true,
         'modified' => true,
+        'store' => true,
+        'comments' => true,
         'commandes' => true
     ];
 }

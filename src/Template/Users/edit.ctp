@@ -14,8 +14,8 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Commandes'), ['controller' => 'Commandes', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Commande'), ['controller' => 'Commandes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Orders'), ['controller' => 'Commandes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Order'), ['controller' => 'Commandes', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="users form large-9 medium-8 columns content">
@@ -26,6 +26,9 @@
             echo $this->Form->control('username');
             echo $this->Form->control('email');
             echo $this->Form->control('password');
+            echo $this->Form->control('isAdmin');
+/*            echo $this->Form->control('token');*/
+            echo $this->Form->control('actif');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

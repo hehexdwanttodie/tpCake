@@ -21,6 +21,7 @@ use Cake\Http\Middleware\CsrfProtectionMiddleware;
 use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
+use Cake\Core\Plugin;
 
 /**
  * The default class to use for all routes
@@ -60,6 +61,12 @@ Router::scope('/', function (RouteBuilder $routes) {
         'httpOnly' => true
     ]));
 
+    Router::defaultRouteClass('DashedRoute');
+    Router::scope('/', function (RouteBuilder $routes) {
+        $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
+        $routes->fallbacks('DashedRoute');
+    });
+/*    Plugin::routes();*/
     /**
      * Apply a middleware to the current route scope.
      * Requires middleware to be registered via `Application::routes()` with `registerMiddleware()`
@@ -71,7 +78,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $routes->connect('/', ['controller' => 'commandes', 'action' => 'index', 'home']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.

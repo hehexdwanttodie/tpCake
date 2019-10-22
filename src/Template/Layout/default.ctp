@@ -45,17 +45,53 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
+                <li>
+                    <?= $this->Html->link('Orders', ['controller' => 'Commandes', 'action' => 'index/']); ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('Users', ['controller' => 'Users', 'action' => 'index/']); ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('Products', ['controller' => 'Produits', 'action' => 'index/']); ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('Stores', ['controller' => 'Stores', 'action' => 'index/']); ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('Comments', ['controller' => 'Comments', 'action' => 'index/']); ?>
+                </li>
                 <li><?php
                 $loguser = $this->request->session()->read('Auth.User');
                 if ($loguser) {
                     $user = $loguser['email'];
-                    echo $this->Html->link($user . ' logout', ['controller' => 'Users', 'action' => 'logout']);
+                    echo $this->Html->link( ' logout', ['controller' => 'Users', 'action' => 'logout']);
                 } else {
                     echo $this->Html->link('login', ['controller' => 'Users', 'action' => 'login']);
                 }
                     ?></li>
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+                <li>
+                    <?php
+                    $loguser = $this->request->session()->read('Auth.User');
+                    if ($loguser) {
+                        $user = $loguser['email'];
+                        echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view/'.$loguser['id']]);
+                    }
+                    ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('À Propos', ['controller' => 'APropos', 'action' => 'index/']); ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?>
+                </li>
+
+                <li>
+                    <?= $this->Html->link('English', ['action' => 'changeLang', 'default'], ['escape' => false]) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('한국의', ['action' => 'changeLang', 'ko_KR'], ['escape' => false]) ?>
+                </li>
+
             </ul>
         </div>
     </nav>
