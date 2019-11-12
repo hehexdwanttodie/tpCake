@@ -7,13 +7,14 @@ use Cake\ORM\Entity;
  * Store Entity
  *
  * @property int $id
- * @property int $file_id
- * @property string $name
- * @property \Cake\I18n\FrozenDate $created
- * @property \Cake\I18n\FrozenDate $modified
+ * @property int|null $file_id
+ * @property string|null $name
+ * @property \Cake\I18n\FrozenDate|null $created
+ * @property \Cake\I18n\FrozenDate|null $modified
  *
  * @property \App\Model\Entity\File $file
  * @property \App\Model\Entity\Produit[] $produits
+ * @property \App\Model\Entity\Location[] $locations
  */
 class Store extends Entity
 {
@@ -32,6 +33,7 @@ class Store extends Entity
         'created' => true,
         'modified' => true,
         'file' => true,
-        'produits' => true
+        'produits' => true,
+        'locations' => true
     ];
 }

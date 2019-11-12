@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Stores Model
  *
  * @property \App\Model\Table\FilesTable&\Cake\ORM\Association\BelongsTo $Files
+ * @property \App\Model\Table\LocationsTable&\Cake\ORM\Association\HasMany $Locations
  * @property \App\Model\Table\ProduitsTable&\Cake\ORM\Association\HasMany $Produits
  *
  * @method \App\Model\Entity\Store get($primaryKey, $options = [])
@@ -42,8 +43,10 @@ class StoresTable extends Table
         $this->addBehavior('Timestamp');
 
         $this->belongsTo('Files', [
-            'foreignKey' => 'file_id',
-            'joinType' => 'INNER'
+            'foreignKey' => 'file_id'
+        ]);
+        $this->hasMany('Locations', [
+            'foreignKey' => 'store_id'
         ]);
         $this->hasMany('Produits', [
             'foreignKey' => 'store_id'
@@ -65,8 +68,7 @@ class StoresTable extends Table
         $validator
             ->scalar('name')
             ->maxLength('name', 255)
-            ->requirePresence('name', 'create')
-            ->notEmptyString('name');
+            ->allowEmptyString('name');
 
         return $validator;
     }

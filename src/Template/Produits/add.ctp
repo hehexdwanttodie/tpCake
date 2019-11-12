@@ -1,4 +1,14 @@
 <?php
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "locations",
+    "action" => "getByCategory",
+    "_ext" => "json"
+]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Articles/add', ['block' => 'scriptBottom']);
+?>
+
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Produit $produit
@@ -21,9 +31,10 @@
     <fieldset>
         <legend><?= __('Add Product') ?></legend>
         <?php
-            echo $this->Form->control('store_id', ['options' => $stores]);
-            echo $this->Form->control('title');
-/*            echo $this->Form->control('commandes._ids', ['options' => $commandes]);*/
+        echo $this->Form->control('store_id', ['options' => $stores]);
+        echo $this->Form->control('location_id', ['options' => $locations]);
+        echo $this->Form->control('title');
+        /*            echo $this->Form->control('commandes._ids', ['options' => $commandes]);*/
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

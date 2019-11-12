@@ -34,6 +34,7 @@ class Produit extends Entity
         'modified' => true,
         'store' => true,
         'comments' => true,
-        'commandes' => true
+        'commandes' => true,
+        'location_id' => true
     ];
 }

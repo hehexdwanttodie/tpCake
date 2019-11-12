@@ -37,7 +37,7 @@ class StoresController extends AppController
     public function view($id = null)
     {
         $store = $this->Stores->get($id, [
-            'contain' => ['Files', 'Produits']
+            'contain' => ['Files', 'Produits', 'Locations']
         ]);
 
         $this->set('store', $store);
@@ -60,6 +60,8 @@ class StoresController extends AppController
             }
             $this->Flash->error(__('The store could not be saved. Please, try again.'));
         }
+
+
         $files = $this->Stores->Files->find('list', ['limit' => 200]);
         $this->set(compact('store', 'files'));
     }
@@ -108,12 +110,13 @@ class StoresController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
     public function isAuthorized($user)
     {
         $action = $this->request->getParam('action');
         if ($user['isAdmin'] == 1){
             return true;
-        }else if (in_array($action, ['view','index',])) {
+        }else if (in_array($action, ['add','view','index','login'])) {
             return true;
         }
     }

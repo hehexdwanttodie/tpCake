@@ -60,6 +60,21 @@ class ProduitsController extends AppController
             }
             $this->Flash->error(__('The produit could not be saved. Please, try again.'));
         }
+
+        // Bâtir la liste des catégories
+        $this->loadModel('Stores');
+        $stores = $this->Stores->find('list', ['limit' => 200]);
+
+        // Extraire le id de la première catégorie
+        $stores = $stores->toArray();
+        reset($stores);
+        $store_id = key($stores);
+
+        // Bâtir la liste des sous-catégories reliées à cette catégorie
+        $locations = $this->Stores->Locations->find('list', [
+            'conditions' => ['Locations.store_id' => $store_id],
+        ]);
+
         $stores = $this->Produits->Stores->find('list', ['limit' => 200]);
         $commandes = $this->Produits->Commandes->find('list', ['limit' => 200]);
         $this->set(compact('produit', 'stores', 'commandes'));

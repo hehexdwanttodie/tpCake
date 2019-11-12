@@ -2,34 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335238e5-7675-4fde-8b47-49b01c176238" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AProposController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Template/APropos/index.ctp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Template/Users/validate.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/schema/i18n.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/schema/sessions.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cli-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cli-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlite/default.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite/default.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProduitsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProduitsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StoresController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StoresController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Produit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Store.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Store.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Table/ProduitsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/ProduitsTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/UsersTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/StoresTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/StoresTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template/Produits/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/add.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Produits/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/edit.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Produits/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Produits/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/view.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/add.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/edit.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/login.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/login.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Users/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Users/view.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Fixture/ProduitsFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixture/ProduitsFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Fixture/UsersFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixture/UsersFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/ProduitsControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/ProduitsControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/ProduitsTableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/ProduitsTableTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Stores/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Stores/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Stores/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Stores/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Stores/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Stores/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Stores/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Stores/view.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fixture/StoresFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixture/StoresFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/StoresControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/StoresControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/StoresTableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/StoresTableTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_files" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_i18n" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_i18n" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_produits" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_produits" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_stores" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_stores" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_users" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_users" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_fr__c_a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_en__u_s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_fr__c_a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_fr__c_a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +49,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -62,64 +75,6 @@
       </path>
     </expand>
     <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Entity/Commande.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Entity/Comment.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Entity/File.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Entity/Produit.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Entity/Store.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Layout/error.ctp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -209,100 +164,25 @@
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1538" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
   <component name="ProjectId" id="1SAWu10OfGh88ze8oUymtgiuF2n" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="Table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gestion_format35" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\UniServerZ\www\tpCake\config\Migrations" />
+      <recent name="H:\UniServerZ\www\tpCake\src\Template\APropos" />
+      <recent name="C:\UniServerZ\www\tpCake\config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\UniServerZ\www\tpCake\src\Locale\ko_KR" />
       <recent name="C:\UniServerZ\www\tpCake\src\Locale" />
       <recent name="C:\UniServerZ\www\tpCake\config\schema" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\UniServerZ\www\tpCake\src\Template\APropos" />
-      <recent name="C:\UniServerZ\www\tpCake\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -364,6 +244,12 @@
       <workItem from="1571189211888" duration="6515000" />
       <workItem from="1571316774920" duration="2070000" />
       <workItem from="1571417563121" duration="706000" />
+      <workItem from="1572035619536" duration="828000" />
+      <workItem from="1572626560471" duration="1201000" />
+      <workItem from="1573131125476" duration="4884000" />
+      <workItem from="1573233114510" duration="259000" />
+      <workItem from="1573241987415" duration="1220000" />
+      <workItem from="1573586388759" duration="3962000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1567016085024</created>
@@ -396,33 +282,6 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2776000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -432,12 +291,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -476,86 +329,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/AProposController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FilesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Files/add.ctp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/UsersTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/CommandesTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/ProduitsTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/CommentsTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/FilesTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/StoresTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Commande.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Comment.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/File.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Produit.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Store.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Layout/error.ctp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
   </component>
 </project>

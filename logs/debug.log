@@ -3455,3 +3455,130 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
 
 
 
+2019-11-07 12:49:07 Notice: Notice (8): fwrite() [<a href='https://secure.php.net/function.fwrite'>function.fwrite</a>]: send of 6 bytes failed with errno=10054 Une connexion existante a d� �tre ferm�e par l�h�te distant.
+ in [C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Network\Socket.php, line 341]
+Request URL: /users/add
+Referer URL: http://localhost/tpCake/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+fwrite - [internal], line ??
+Cake\Network\Socket::write() - CORE\src\Network\Socket.php, line 341
+Cake\Mailer\Transport\SmtpTransport::_smtpSend() - CORE\src\Mailer\Transport\SmtpTransport.php, line 439
+Cake\Mailer\Transport\SmtpTransport::_disconnect() - CORE\src\Mailer\Transport\SmtpTransport.php, line 411
+Cake\Mailer\Transport\SmtpTransport::disconnect() - CORE\src\Mailer\Transport\SmtpTransport.php, line 130
+Cake\Mailer\Transport\SmtpTransport::__destruct() - CORE\src\Mailer\Transport\SmtpTransport.php, line 75
+[main] - [internal], line ??
+
+
+
+2019-11-07 12:54:53 Notice: Notice (8): fwrite() [<a href='https://secure.php.net/function.fwrite'>function.fwrite</a>]: send of 6 bytes failed with errno=10054 Une connexion existante a d� �tre ferm�e par l�h�te distant.
+ in [C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Network\Socket.php, line 341]
+Request URL: /users/add
+Referer URL: http://localhost/tpCake/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+fwrite - [internal], line ??
+Cake\Network\Socket::write() - CORE\src\Network\Socket.php, line 341
+Cake\Mailer\Transport\SmtpTransport::_smtpSend() - CORE\src\Mailer\Transport\SmtpTransport.php, line 439
+Cake\Mailer\Transport\SmtpTransport::_disconnect() - CORE\src\Mailer\Transport\SmtpTransport.php, line 411
+Cake\Mailer\Transport\SmtpTransport::disconnect() - CORE\src\Mailer\Transport\SmtpTransport.php, line 130
+Cake\Mailer\Transport\SmtpTransport::__destruct() - CORE\src\Mailer\Transport\SmtpTransport.php, line 75
+[main] - [internal], line ??
+
+
+
+2019-11-12 20:28:08 Notice: Notice (8): Undefined variable: locations in [H:\UniServerZ\www\tpCake\src\Template\Produits\add.ctp, line 35]
+Request URL: /produits/add
+Referer URL: http://localhost/tpCake/users/login?redirect=%2Fproduits%2Fadd
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+include - APP/Template\Produits\add.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::render() - CORE\src\View\View.php, line 880
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 162
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-12 20:28:08 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - H:\UniServerZ\www\tpCake\src\Template\Layout\default.ctp, line: 81
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\functions.php, line 311]
+Request URL: /produits/add
+Referer URL: http://localhost/tpCake/users/login?redirect=%2Fproduits%2Fadd
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 311
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 570
+include - APP/Template\Layout\default.ctp, line 81
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 162
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-12 20:28:08 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - H:\UniServerZ\www\tpCake\src\Template\Layout\default.ctp, line: 91
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\functions.php, line 311]
+Request URL: /produits/add
+Referer URL: http://localhost/tpCake/users/login?redirect=%2Fproduits%2Fadd
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 311
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 570
+include - APP/Template\Layout\default.ctp, line 91
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 162
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+

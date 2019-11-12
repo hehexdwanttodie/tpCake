@@ -23,6 +23,8 @@ use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 use Cake\Core\Plugin;
 
+Router::extensions(['json', 'xml']);
+
 /**
  * The default class to use for all routes
  *

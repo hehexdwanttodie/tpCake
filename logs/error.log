@@ -4801,3 +4801,178 @@ Request URL: /a-propos/baseDeBase.jpg
 Referer URL: http://localhost/tpCake/a-propos/index
 
 
+2019-11-07 12:48:27 Error: [PDOException] SQLSTATE[HY000]: General error: 5 database is locked
+#0 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): Cake\Database\Statement\SqliteStatement->execute(NULL)
+#4 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#5 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#6 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#7 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#8 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#10 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#11 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#12 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#13 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#14 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#15 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#16 C:\UniServerZ\www\tpCake\src\Controller\UsersController.php(57): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#17 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\UsersController->add()
+#18 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#19 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\UniServerZ\www\tpCake\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\UniServerZ\www\tpCake\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+Request URL: /users/add
+Referer URL: http://localhost/tpCake/users/add
+
+
+2019-11-07 12:49:07 Error: [Cake\Network\Exception\SocketException] SMTP timeout.
+#0 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(222): Cake\Mailer\Transport\SmtpTransport->_smtpSend(NULL, '220')
+#1 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(174): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\UniServerZ\www\tpCake\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Mailer\Email.php(2140): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\UniServerZ\www\tpCake\src\Controller\UsersController.php(127): Cake\Mailer\Email->send('Click here to c...')
+#5 C:\UniServerZ\www\tpCake\src\Controller\UsersController.php(58): App\Controller\UsersController->sendConfirm(Object(Cake\Mailer\Email), Object(App\Model\Entity\User))
+#6 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\UsersController->add()
+#7 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#8 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\tpCake\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\tpCake\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /users/add
+Referer URL: http://localhost/tpCake/users/add
+
+
+2019-11-07 12:54:52 Error: [Cake\Network\Exception\SocketException] SMTP timeout.
+#0 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(222): Cake\Mailer\Transport\SmtpTransport->_smtpSend(NULL, '220')
+#1 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(174): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\UniServerZ\www\tpCake\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Mailer\Email.php(2140): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\UniServerZ\www\tpCake\src\Controller\UsersController.php(127): Cake\Mailer\Email->send('Click here to c...')
+#5 C:\UniServerZ\www\tpCake\src\Controller\UsersController.php(58): App\Controller\UsersController->sendConfirm(Object(Cake\Mailer\Email), Object(App\Model\Entity\User))
+#6 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\UsersController->add()
+#7 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#8 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\tpCake\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\tpCake\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /users/add
+Referer URL: http://localhost/tpCake/users/add
+
+
+2019-11-12 19:57:14 Error: [Cake\Controller\Exception\MissingActionException] Action StoresController::produits() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'StoresController',
+  'action' => 'produits',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StoresController))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 H:\UniServerZ\www\tpCake\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /stores/produits
+
+
+2019-11-12 19:57:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 H:\UniServerZ\www\tpCake\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /js/Articles/add.js
+Referer URL: http://localhost/tpCake/produits/add
+
+
+2019-11-12 20:28:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 H:\UniServerZ\www\tpCake\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /js/Articles/add.js
+Referer URL: http://localhost/tpCake/produits/add
+
+

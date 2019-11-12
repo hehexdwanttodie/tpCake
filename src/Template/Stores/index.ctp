@@ -10,8 +10,10 @@
         <li><?= $this->Html->link(__('New Store'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Products'), ['controller' => 'Produits', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Product'), ['controller' => 'Produits', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Produits'), ['controller' => 'Produits', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Produit'), ['controller' => 'Produits', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Locations'), ['controller' => 'Locations', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Location'), ['controller' => 'Locations', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="stores index large-9 medium-8 columns content">
@@ -19,8 +21,8 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-<!--                <th scope="col"><?/*= $this->Paginator->sort('id') */?></th>-->
-                <th scope="col"><?= $this->Paginator->sort('Image') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('file_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -30,15 +32,8 @@
         <tbody>
             <?php foreach ($stores as $store): ?>
             <tr>
-<!--                <td><?/*= $this->Number->format($store->id) */?></td>-->
-               <!-- <td><?/*= $store->has('file') ? $this->Html->link($store->file->name, ['controller' => 'Files', 'action' => 'view', $store->file->id]) : '' */?></td>-->
-                <?php
-
-                $file=$store->file;
-                /*die($file->path.$file->name);*/
-                ?>
-                <td><embed src="/tpCake/img/Files/<?=$file->name ?>" width="50px" height="50px"></td>
-
+                <td><?= $this->Number->format($store->id) ?></td>
+                <td><?= $store->has('file') ? $this->Html->link($store->file->name, ['controller' => 'Files', 'action' => 'view', $store->file->id]) : '' ?></td>
                 <td><?= h($store->name) ?></td>
                 <td><?= h($store->created) ?></td>
                 <td><?= h($store->modified) ?></td>

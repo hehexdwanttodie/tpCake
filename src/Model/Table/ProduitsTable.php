@@ -54,6 +54,9 @@ class ProduitsTable extends Table
             'targetForeignKey' => 'commande_id',
             'joinTable' => 'commandes_produits'
         ]);
+        $this->belongsTo('Locations', [
+            'foreignKey' => 'location_id'
+        ]);
     }
 
     /**
