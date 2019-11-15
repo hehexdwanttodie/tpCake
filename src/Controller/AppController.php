@@ -17,6 +17,7 @@ namespace App\Controller;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\I18n\I18n;
+use Crud\Controller\ControllerTrait;
 
 /**
  * Application Controller
@@ -29,7 +30,29 @@ use Cake\I18n\I18n;
 class AppController extends Controller
 {
 
-    /**
+    use ControllerTrait;
+
+    public $components = [
+        'RequestHandler',
+        'Crud.Crud' => [
+            'actions' => [
+                'Crud.Index',
+                'Crud.View',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.Delete'
+            ],
+            'listeners' => [
+                'Crud.Api',
+                'Crud.ApiPagination',
+                'Crud.ApiQueryLog'
+            ]
+        ]
+    ];
+
+
+
+/**
      * Initialization hook method.
      *
      * Use this method to add common initialization code like loading components.

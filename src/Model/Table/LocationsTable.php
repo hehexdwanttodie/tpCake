@@ -33,7 +33,7 @@ class LocationsTable extends Table
         parent::initialize($config);
 
         $this->setTable('locations');
-        $this->setDisplayField('id');
+        $this->setDisplayField('adress');
         $this->setPrimaryKey('id');
 
         $this->belongsTo('Stores', [

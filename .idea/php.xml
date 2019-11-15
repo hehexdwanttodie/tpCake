@@ -77,6 +77,7 @@
       <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
       <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/friendsofcake/crud" />
     </include_path>
   </component>
   <component name="PhpUnit">

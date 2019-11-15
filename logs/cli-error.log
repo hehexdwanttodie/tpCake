@@ -475,3 +475,22 @@ Stack Trace:
 #13 {main}
 
 
+2019-11-12 20:56:21 Error: [Cake\Database\Exception] Cannot describe phones. It has 0 columns. in H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 101
+Stack Trace:
+#0 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('phones', Array)
+#1 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('phones')
+#2 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#3 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#4 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#5 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'phones', 'Phones')
+#6 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Phones')
+#7 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Phones')
+#8 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Phones', 0)
+#9 H:\UniServerZ\www\tpCake\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#10 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('phones')
+#11 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#12 H:\UniServerZ\www\tpCake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#13 H:\UniServerZ\www\tpCake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+

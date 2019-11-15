@@ -63,6 +63,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <div class="top-bar-section">
             <ul class="right">
                 <li>
+                    <?= $this->Html->link('Autocomplete', ['controller' => 'Phones', 'action' => 'Autocomplete/']); ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('Liste Dynamiques', ['controller' => 'Produits', 'action' => 'add/']); ?>
+                </li>
+                <li>
                     <?= $this->Html->link('Orders', ['controller' => 'Commandes', 'action' => 'index/']); ?>
                 </li>
                 <li>
@@ -78,7 +84,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <?= $this->Html->link('Comments', ['controller' => 'Comments', 'action' => 'index/']); ?>
                 </li>
                 <li><?php
-                $loguser = $this->request->session()->read('Auth.User');
+                $loguser = $this->request->getSession()->read('Auth.User');
                 if ($loguser) {
                     $user = $loguser['email'];
                     echo $this->Html->link( ' logout', ['controller' => 'Users', 'action' => 'logout']);
@@ -88,7 +94,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     ?></li>
                 <li>
                     <?php
-                    $loguser = $this->request->session()->read('Auth.User');
+                    $loguser = $this->request->getSession()->read('Auth.User');
                     if ($loguser) {
                         $user = $loguser['email'];
                         echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view/'.$loguser['id']]);

@@ -71,13 +71,13 @@ class ProduitsController extends AppController
         $store_id = key($stores);
 
         // Bâtir la liste des sous-catégories reliées à cette catégorie
-        $locations = $this->Stores->Locations->find('list', [
+        $locations = $this->Produits->Locations->find('list', [
             'conditions' => ['Locations.store_id' => $store_id],
         ]);
 
         $stores = $this->Produits->Stores->find('list', ['limit' => 200]);
         $commandes = $this->Produits->Commandes->find('list', ['limit' => 200]);
-        $this->set(compact('produit', 'stores', 'commandes'));
+        $this->set(compact('produit', 'stores', 'commandes','Locations'));
     }
 
     /**

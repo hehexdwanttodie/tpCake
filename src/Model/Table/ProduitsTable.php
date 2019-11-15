@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Produits Model
  *
  * @property \App\Model\Table\StoresTable&\Cake\ORM\Association\BelongsTo $Stores
+ * @property \App\Model\Table\LocationsTable&\Cake\ORM\Association\BelongsTo $Locations
  * @property \App\Model\Table\CommentsTable&\Cake\ORM\Association\HasMany $Comments
  * @property \App\Model\Table\CommandesTable&\Cake\ORM\Association\BelongsToMany $Commandes
  *
@@ -43,8 +44,10 @@ class ProduitsTable extends Table
         $this->addBehavior('Timestamp');
 
         $this->belongsTo('Stores', [
-            'foreignKey' => 'store_id',
-            'joinType' => 'INNER'
+            'foreignKey' => 'store_id'
+        ]);
+        $this->belongsTo('Locations', [
+            'foreignKey' => 'location_id'
         ]);
         $this->hasMany('Comments', [
             'foreignKey' => 'produit_id'
@@ -53,9 +56,6 @@ class ProduitsTable extends Table
             'foreignKey' => 'produit_id',
             'targetForeignKey' => 'commande_id',
             'joinTable' => 'commandes_produits'
-        ]);
-        $this->belongsTo('Locations', [
-            'foreignKey' => 'location_id'
         ]);
     }
 
@@ -74,8 +74,7 @@ class ProduitsTable extends Table
         $validator
             ->scalar('title')
             ->maxLength('title', 191)
-            ->allowEmptyString('title')
-            ->add('title', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->allowEmptyString('title');
 
         return $validator;
     }
@@ -89,8 +88,8 @@ class ProduitsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['title']));
         $rules->add($rules->existsIn(['store_id'], 'Stores'));
+        $rules->add($rules->existsIn(['location_id'], 'Locations'));
 
         return $rules;
     }

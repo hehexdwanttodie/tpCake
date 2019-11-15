@@ -23,6 +23,7 @@ use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 use Cake\Core\Plugin;
 
+
 Router::extensions(['json', 'xml']);
 
 /**
@@ -59,9 +60,16 @@ Router::scope('/commandes', ['controller' => 'Commandes'], function ($routes) {
 
 Router::scope('/', function (RouteBuilder $routes) {
     // Register scoped middleware for in scopes.
+    $routes->resources('Commandes');
     $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
         'httpOnly' => true
     ]));
+
+    Router::prefix('api', function ($routes) {
+        $routes->extensions(['json', 'xml']);
+        $routes->resources('Commandes');
+        $routes->fallbacks(DashedRoute::class);
+    });
 
     Router::defaultRouteClass('DashedRoute');
     Router::scope('/', function (RouteBuilder $routes) {

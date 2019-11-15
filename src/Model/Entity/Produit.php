@@ -7,14 +7,16 @@ use Cake\ORM\Entity;
  * Produit Entity
  *
  * @property int $id
- * @property int $store_id
+ * @property int|null $store_id
  * @property string|null $title
  * @property \Cake\I18n\FrozenTime|null $created
  * @property \Cake\I18n\FrozenTime|null $modified
+ * @property int|null $location_id
  *
  * @property \App\Model\Entity\Store $store
  * @property \App\Model\Entity\Comment[] $comments
  * @property \App\Model\Entity\Commande[] $commandes
+ * @property \App\Model\Entity\Location $location
  */
 class Produit extends Entity
 {
@@ -32,9 +34,10 @@ class Produit extends Entity
         'title' => true,
         'created' => true,
         'modified' => true,
+        'location_id' => true,
         'store' => true,
         'comments' => true,
         'commandes' => true,
-        'location_id' => true
+        'location' => true
     ];
 }

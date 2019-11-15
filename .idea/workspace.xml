@@ -1,37 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="335238e5-7675-4fde-8b47-49b01c176238" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="335238e5-7675-4fde-8b47-49b01c176238" name="Default Changelist" comment="after A">
+      <change afterPath="$PROJECT_DIR$/src/Controller/api/AppController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/api/CommandesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Commandes/oldIndex.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Phones/autocomplete.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/Commandes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/Phones/autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/Produits/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tpCake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tpCake.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/cli-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cli-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cli-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cli-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlite/default.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite/default.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CommandesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CommandesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProduitsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProduitsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/StoresController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StoresController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Produit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Store.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/LocationsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/LocationsTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Table/ProduitsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/ProduitsTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Table/StoresTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/StoresTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Commandes/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Commandes/index.ctp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template/Produits/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/add.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Stores/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Stores/add.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Stores/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Stores/edit.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Stores/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Stores/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Stores/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Stores/view.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Fixture/StoresFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixture/StoresFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/StoresControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/StoresControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/StoresTableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/StoresTableTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Produits/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Produits/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Produits/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/view.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fixture/ProduitsFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixture/ProduitsFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/ProduitsTableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/ProduitsTableTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_files" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes_produits" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes_produits" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_comments" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_files" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_i18n" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_i18n" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_produits" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_produits" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_stores" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_stores" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_locations" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_produits" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_stores" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_users" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_users" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_fr__c_a" afterDir="false" />
@@ -40,6 +53,10 @@
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_fr__c_a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/cakephp-plugins.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/cakephp-plugins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,11 +92,6 @@
       </path>
     </expand>
     <select />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>has</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -162,13 +174,14 @@
       <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
       <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/friendsofcake/crud" />
     </include_path>
   </component>
   <component name="ProjectId" id="1SAWu10OfGh88ze8oUymtgiuF2n" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller/api" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -180,9 +193,11 @@
       <recent name="C:\UniServerZ\www\tpCake\config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\UniServerZ\www\tpCake\src\Locale\ko_KR" />
-      <recent name="C:\UniServerZ\www\tpCake\src\Locale" />
-      <recent name="C:\UniServerZ\www\tpCake\config\schema" />
+      <recent name="C:\xampp\htdocs\tpCake\src\Controller\api" />
+      <recent name="C:\xampp\htdocs\tpCake\src\Template\Commandes" />
+      <recent name="C:\xampp\htdocs\tpCake\webroot\js\Commandes" />
+      <recent name="H:\UniServerZ\www\tpCake\webroot\js\Produits" />
+      <recent name="H:\UniServerZ\www\tpCake\webroot\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,7 +264,9 @@
       <workItem from="1573131125476" duration="4884000" />
       <workItem from="1573233114510" duration="259000" />
       <workItem from="1573241987415" duration="1220000" />
-      <workItem from="1573586388759" duration="3962000" />
+      <workItem from="1573586388759" duration="10934000" />
+      <workItem from="1573777869795" duration="250000" />
+      <workItem from="1573778572941" duration="10531000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1567016085024</created>
@@ -279,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571195163513</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="before cake produits">
+      <created>1573590620978</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573590620978</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +341,8 @@
     <MESSAGE value="Semaine 1 terminé" />
     <MESSAGE value="Tp Terminé" />
     <MESSAGE value="Version finale" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version finale" />
+    <MESSAGE value="before cake produits" />
+    <option name="LAST_COMMIT_MESSAGE" value="before cake produits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
