@@ -70,13 +70,15 @@ Router::scope('/', function (RouteBuilder $routes) {
         $routes->resources('Commandes');
         $routes->fallbacks(DashedRoute::class);
     });
+    Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'); });
 
     Router::defaultRouteClass('DashedRoute');
     Router::scope('/', function (RouteBuilder $routes) {
         $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
         $routes->fallbacks('DashedRoute');
     });
-/*    Plugin::routes();*/
+
+    Plugin::routes();
     /**
      * Apply a middleware to the current route scope.
      * Requires middleware to be registered via `Application::routes()` with `registerMiddleware()`
@@ -116,6 +118,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
+
 
 /**
  * If you need a different set of middleware or none at all,
