@@ -77,7 +77,7 @@ class ProduitsController extends AppController
 
         $stores = $this->Produits->Stores->find('list', ['limit' => 200]);
         $commandes = $this->Produits->Commandes->find('list', ['limit' => 200]);
-        $this->set(compact('produit', 'stores', 'commandes','Locations'));
+        $this->set(compact('produit', 'stores', 'commandes','locations'));
     }
 
     /**

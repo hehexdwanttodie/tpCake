@@ -1,4 +1,14 @@
 <?php
+$urlToPhonesAutocompleteJson = $this->Url->build([
+    "controller" => "Phones",
+    "action" => "findPhones",
+    "_ext" => "json"
+]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToPhonesAutocompleteJson . '";', ['block' => true]);
+echo $this->Html->script('Phones/autocomplete', ['block' => 'scriptBottom']);
+?>
+
+<?php
 $urlToLinkedListFilter = $this->Url->build([
     "controller" => "Locations",
     "action" => "getByLocation",
@@ -34,7 +44,7 @@ echo $this->Html->script('Produits/add', ['block' => 'scriptBottom']);
         <?php
             echo $this->Form->control('store_id', ['options' => $stores, 'empty' => true]);
             echo $this->Form->control('location_id', ['options' => $locations, 'empty' => true]);
-            echo $this->Form->control('title');
+            echo $this->Form->input('title', ['id' => 'autocomplete']);
 
             /*echo $this->Form->control('commandes._ids', ['options' => $commandes]);*/
         ?>

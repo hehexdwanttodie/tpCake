@@ -63,25 +63,25 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <div class="top-bar-section">
             <ul class="right">
                 <li>
-                    <?= $this->Html->link('Autocomplete', ['controller' => 'Phones', 'action' => 'Autocomplete/']); ?>
+                    <?= $this->Html->link('Autocomplete Et Liste Dynamique', ['prefix' => false,'controller' => 'Produits', 'action' => 'add/']); ?>
                 </li>
                 <li>
-                    <?= $this->Html->link('Liste Dynamiques', ['controller' => 'Produits', 'action' => 'add/']); ?>
+                    <?= $this->Html->link('Admin', ['prefix' => 'admin', 'controller' => 'Produits', 'action' => 'add/']); ?>
                 </li>
                 <li>
-                    <?= $this->Html->link('Orders', ['controller' => 'Commandes', 'action' => 'index/']); ?>
+                    <?= $this->Html->link('Monopage', ['prefix' => false, 'controller' => 'Commandes', 'action' => 'index/']); ?>
                 </li>
                 <li>
-                    <?= $this->Html->link('Users', ['controller' => 'Users', 'action' => 'index/']); ?>
+                    <?= $this->Html->link('Users', ['prefix' => false,'controller' => 'Users', 'action' => 'index/']); ?>
                 </li>
                 <li>
-                    <?= $this->Html->link('Products', ['controller' => 'Produits', 'action' => 'index/']); ?>
+                    <?= $this->Html->link('Products', ['prefix' => false,'controller' => 'Produits', 'action' => 'index/']); ?>
                 </li>
                 <li>
-                    <?= $this->Html->link('Stores', ['controller' => 'Stores', 'action' => 'index/']); ?>
+                    <?= $this->Html->link('Stores', ['prefix' => false,'controller' => 'Stores', 'action' => 'index/']); ?>
                 </li>
                 <li>
-                    <?= $this->Html->link('Comments', ['controller' => 'Comments', 'action' => 'index/']); ?>
+                    <?= $this->Html->link('Comments', ['prefix' => false,'controller' => 'Comments', 'action' => 'index/']); ?>
                 </li>
                 <li><?php
                 $loguser = $this->request->getSession()->read('Auth.User');

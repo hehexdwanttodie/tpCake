@@ -42,6 +42,7 @@ use Cake\Mailer\Email;
 use Cake\Mailer\TransportFactory;
 use Cake\Utility\Inflector;
 use Cake\Utility\Security;
+use Cake\Core\Plugin;
 
 /**
  * Uncomment block of code below if you want to use `.env` file during development.
@@ -191,6 +192,35 @@ Type::build('datetime')
 Type::build('timestamp')
     ->useImmutable();
 
+
+
+
+/*
+ * Only try to load DebugKit in development mode
+ * Debug Kit should not be installed on a production system
+ */
+if (Configure::read('debug')) {
+    Plugin::load('DebugKit', ['bootstrap' => true]);
+}
+
+Plugin::load('Migrations');
+
+Configure::write('CakePdf', [
+    'engine' => [
+        'className' => 'CakePdf.WkHtmlToPdf',
+        'binary' => 'C:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe'
+    ],
+    'margin' => [
+        'bottom' => 15,
+        'left' => 50,
+        'right' => 30,
+        'top' => 45
+    ],
+    'orientation' => 'landscape',
+    'download' => true
+]);
+
+Plugin::load('CakePdf', ['bootstrap' => true]);
 /*
  * Custom Inflector rules, can be set to correctly pluralize or singularize
  * table, model, controller names or whatever other string is passed to the

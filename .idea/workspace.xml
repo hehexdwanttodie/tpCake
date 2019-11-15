@@ -2,38 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335238e5-7675-4fde-8b47-49b01c176238" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/queries.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/queries.log.1573782839" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/queries.log.1573788584" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/CommandesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/CommandesControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_crud_fr__c_a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/twigView/40/409e9cb45c99b405ad31a264dcdbea8997f71f4a7c972188119ea54e6b18a3d0.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/twigView/7f/7fda96aa4429b4f9d56f9d0608e97778648ed053bbb133dddbb8a28cb661d04a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/twigView/94/94d2f3ffc480b53f134e93fd5051d72762ef6310191800cb892ea3d400d002fd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/twigView/ac/acd92d54f575ab5aa80be05b6557e17de22d8c7991324137f5e4c3bb6975aecc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/twigView/b5/b564b9ba766665afbbec1139185e4c4ed09534ddc41e5861dd60fdb6c7fa1bdc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/twigView/c0/c0161c25e5a9807aacb31e4d8106aa705459dec5e85e91e8446f254b3a2e3874.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/twigView/dd/dddd1f107cf7dbc280e28093d6ce75c7247bcb5809fc1c09f2ac9dc12c626a7c.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/cache/twigView/f2/f2988d5059e16fe17078f813ce762a743eccab5655724b6feaa60b78cf73cb49.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Layout/pdf/default.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Produits/pdf/view.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tpCake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tpCake.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/cli-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cli-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/queries.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/queries.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlite/default.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite/default.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProduitsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProduitsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/APropos/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/APropos/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Phones/autocomplete.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Produits/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Produits/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Produits/index.ctp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes_produits" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes_produits" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_commandes_produits" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_i18n" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_i18n" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_users" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_users" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_en__u_s" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_cake_fr__c_a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_crud_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_crud_fr__c_a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_en__u_s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_fr__c_a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_fr__c_a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_fr__c_a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/cakephp-plugins.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/cakephp-plugins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/js/Phones/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/js/Produits/autocomplete.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,9 +53,6 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -70,9 +77,107 @@
     </expand>
     <select />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Layout/pdf/default.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/APropos/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="107" lean-forward="true" selection-start-line="38" selection-start-column="107" selection-end-line="38" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Produits/pdf/view.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ProduitsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="79" column="62" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/js/Produits/autocomplete.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/js/Produits/add.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Phones/add.ctp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Produits/add.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>error</find>
+      <find>link</find>
+      <find>pdf</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Template/Produits/pdf/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Produits/index.ctp" />
+        <option value="$PROJECT_DIR$/config/bootstrap.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/src/Template/Layout/pdf/default.ctp" />
+        <option value="$PROJECT_DIR$/config/routes.php" />
+        <option value="$PROJECT_DIR$/src/Template/Produits/pdf/view.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/ProduitsController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Produits/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Layout/default.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Phones/autocomplete.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/APropos/index.ctp" />
+      </list>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -152,29 +257,157 @@
       <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/friendsofcake/crud" />
+      <path value="$PROJECT_DIR$/vendor/friendsofcake/cakepdf" />
     </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1SAWu10OfGh88ze8oUymtgiuF2n" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Produits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="APropos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+              <item name="pdf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Phones" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Produits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="Commandes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpCake" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="Produits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpCake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cakePdfTuto_v0_0_3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tpCake\webroot\js\Produits" />
+      <recent name="C:\xampp\htdocs\tpCake\src\Template\Layout\pdf" />
+      <recent name="C:\xampp\htdocs\tpCake\src\Template\Produits\pdf" />
+      <recent name="C:\xampp\htdocs\tpCake\src\Template\Layout" />
+      <recent name="C:\xampp\htdocs\tpCake\src\Template\APropos\pdf" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\UniServerZ\www\tpCake\config\Migrations" />
       <recent name="H:\UniServerZ\www\tpCake\src\Template\APropos" />
       <recent name="C:\UniServerZ\www\tpCake\config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\tpCake\src\Template" />
-      <recent name="C:\xampp\htdocs\tpCake\src\Controller\api" />
-      <recent name="C:\xampp\htdocs\tpCake\src\Template\Commandes" />
-      <recent name="C:\xampp\htdocs\tpCake\webroot\js\Commandes" />
-      <recent name="H:\UniServerZ\www\tpCake\webroot\js\Produits" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,7 +476,8 @@
       <workItem from="1573241987415" duration="1220000" />
       <workItem from="1573586388759" duration="10934000" />
       <workItem from="1573777869795" duration="250000" />
-      <workItem from="1573778572941" duration="13537000" />
+      <workItem from="1573778572941" duration="13729000" />
+      <workItem from="1573828116681" duration="7668000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1567016085024</created>
@@ -287,8 +521,43 @@
       <option name="project" value="LOCAL" />
       <updated>1573789312171</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="after A">
+      <created>1573794507148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573794507148</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7668000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -299,6 +568,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -339,5 +614,119 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/webroot/js/Commandes/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/APropos/pdf/index.ctp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Produits/pdf/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Produits/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="202" column="4" selection-start-line="202" selection-start-column="4" selection-end-line="202" selection-end-column="52" />
+          <folding>
+            <element signature="e#959#980#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Layout/pdf/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Produits/pdf/view.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ProduitsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="79" column="62" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Produits/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/Phones/autocomplete.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/Produits/autocomplete.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Phones/add.ctp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Phones/autocomplete.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/Produits/add.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/APropos/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="107" lean-forward="true" selection-start-line="38" selection-start-column="107" selection-end-line="38" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

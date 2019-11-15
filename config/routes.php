@@ -57,13 +57,17 @@ Router::scope('/commandes', ['controller' => 'Commandes'], function ($routes) {
     }
 );
 
+Router::extensions(['pdf']);
 
 Router::scope('/', function (RouteBuilder $routes) {
     // Register scoped middleware for in scopes.
+
     $routes->resources('Commandes');
     $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
         'httpOnly' => true
     ]));
+
+
 
     Router::prefix('api', function ($routes) {
         $routes->extensions(['json', 'xml']);

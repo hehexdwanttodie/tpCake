@@ -43,6 +43,7 @@
                 <td><?= $produit->has('location') ? $this->Html->link($produit->location->id, ['controller' => 'Locations', 'action' => 'view', $produit->location->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $produit->id]) ?>
+                    <?= $this->Html->link('(pdf)', ['action' => 'view', $produit->id . '.pdf']) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $produit->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $produit->id], ['confirm' => __('Are you sure you want to delete # {0}?', $produit->id)]) ?>
                 </td>
